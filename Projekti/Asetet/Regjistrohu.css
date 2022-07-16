@@ -1,0 +1,60 @@
+
+        body{
+            background-image: url("/Fotot/karaxha.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+        }
+        .regjistrimi{
+            background-color: rgba(80,80,80,0.5);
+            width: 500px;
+            padding: 50px;
+            margin-top: 2%;
+            margin-left: 30%;
+        }
+        input[type=text],[type=email],[type=password]{
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            margin-top: 7px;
+            margin-bottom: 7px;
+
+        }
+        input[type=submit]{
+            width: 100%;
+            background-color:aqua;
+            padding: 12px;
+            color: white;
+        }
+        .regjistrimi h2{
+            text-align: center;
+            color: white;
+            font-size: 1cm;
+            margin: 5px;
+            padding: 0px;
+        }
+        input[type=text]:hover{
+    border-color: aqua;
+    cursor: pointer;
+
+}
+input[type=text]:active{
+    background-color: cornsilk;
+
+}
+input[type=submit]:hover{
+
+    border-color: burlywood;
+    background-color: chartreuse;
+}
+span ,a{
+  margin-top:10px;
+  margin-left: 5px;
+}
+a{
+    color: chocolate;
+}
+a:hover{
+    color: red;
+}

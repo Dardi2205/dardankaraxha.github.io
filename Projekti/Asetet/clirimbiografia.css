@@ -1,0 +1,270 @@
+.header{
+    background-color: burlywood;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+   
+   
+  
+}
+.header img{
+  width: 120px;
+  height: 60px;
+  background-size: cover;
+  margin: 0%;
+  margin-left: 20px;
+
+}
+.header .menu a{
+
+    font-family: fantasy;
+ 
+  text-decoration: none;
+  color: white;
+  padding: 2px 20px;
+}
+.header .menu ul{
+display: flex;
+list-style: none;
+
+  
+  
+}
+
+
+.menu a:hover{
+  background-color:rgba(238, 233, 236, 0.3);
+  cursor: grab;
+  padding:22px 20px ;
+  transition-delay: 250ms;
+}
+
+  .ikona {
+  cursor: pointer;
+margin-right: 60px;
+display: flex;
+align-items: center;
+
+ 
+
+
+ 
+}
+
+.ikona a{
+  width: 15px;
+  height: 15px;
+ color: white;
+ font-size: 20px;
+
+margin-left: 50px;
+
+
+text-decoration: none;
+
+}
+
+.footer{
+  background-color: gray;
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.footer .ikona1{
+  padding: 1rem 0;
+}
+.footer .ikona1 a{
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  font-size: 2rem;
+  color: #fff;
+ 
+  border-radius: 50%;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.footer .ikona1 .fa-facebook:hover{
+  background-color: #4267B2;
+  color: white;
+  transition-delay: 300ms; 
+}
+
+.footer .ikona1 .fa-instagram:hover{
+background-color:#E1306C;
+color: white;
+transition-delay: 300ms; 
+}
+
+.footer .ikona1 .fa-twitter:hover{
+background-color: #1DA1F2;
+color: white;
+transition-delay: 300ms; 
+}
+.footer .ikona1 .fa-whatsapp:hover{
+background-color: #25D366;
+color: white;
+transition-delay: 300ms; 
+}
+.footer .ikona1 .fa-phone:hover{
+ background-color: #25D366;
+ color: white;
+ transition-delay: 300ms;
+
+}
+.footer .links{
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  gap: 1.5rem;
+}
+.footer .links a{
+  border: 1px solid white;
+  padding: .5rem 2.3rem;
+  text-decoration: none;
+  font-size:1.2rem;
+  color: white;
+ 
+}
+.footer .links a:hover{
+  color: red;
+}
+
+.footer .copyright{
+  font-size: 1.1rem;
+  color: white;
+  font-weight: lighter;
+
+}
+.footer .copyright span{
+  color: gold;
+  font-size: 0.6cm;
+}
+.about-us{
+  margin-top: 15px;
+  font-size: 55px;
+  color: gray;
+  text-align: center;
+}
+
+
+.biografia h2{
+  font-size:50px;
+  color: gray;
+  padding: 10px;
+
+}
+.biografia h3{
+  font-size: 40px;
+  color: red;
+ 
+}
+.biografia p{
+  font-size: 35px;
+  color: burlywood;
+  
+
+}
+.biografit-shtresa
+{
+  margin-left: 220px;
+  margin-top: -20px;
+}
+.biografia {
+ padding: 5px;
+  text-align: center;
+  background-color:rgba(238, 233, 236, 1);
+  width:80%;
+  height: 550px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+ margin: 10;
+ padding: 0;
+ line-height: 1cm;
+}
+.biografia button{
+  background-color: #1197cc;
+  box-shadow: #094c66 4px 4px 0px;
+  border-radius: 8px;
+  transition: transfrom 200ms,box-shadow 200ms;
+  padding: 10px 20px;
+  margin-top: -10px;
+  
+  
+}
+.biografia button:active{
+  transform: translate(4px) translate(4px);
+  box-shadow: #094c66 0px 0px 0px;
+}
+.biografia a{
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width:768px){
+  .header img{
+    width: 90px;
+    height: 45px;
+}
+
+.home{
+   font-size: 15px;
+   text-align: center;
+}
+.ikona a{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   font-size: 18px;
+
+}
+.ikona{
+   margin-right: 10px;
+   
+}
+
+.menu {
+width: 100%;
+max-height: 0;
+overflow: hidden;
+}
+.menu a:hover{
+padding: 0px 15px;
+}
+.biografit-shtresa{
+  margin-left: 42px;
+ 
+}
+.biografit-shtresa .biografia{
+  width: 80%;
+  height: 600px;
+  line-height: 0.7cm;
+ 
+}
+.biografia h2 {
+  font-size: 30px;
+
+}
+.biografia h3{
+  font-size: 25px;
+}
+.biografia p{
+  font-size: 20px;
+  padding: 20px;
+ 
+}
+.about-us{
+  margin-top: 15px;
+  font-size: 35px;
+  color: gray;
+  text-align: center;
+}
+
+}

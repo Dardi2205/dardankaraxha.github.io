@@ -1,0 +1,107 @@
+body{
+    background-image: url("/Fotot/karaxha.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+ 
+   
+    
+}
+
+
+input[type="text"]{
+width: 100%;
+padding: 12px;
+margin-top: 10px;
+margin-bottom: 10px;
+border-radius: 5px;
+border-color: white;
+border: 1px solid whitesmoke;
+
+
+
+}
+input[type=password]{
+width: 100%;
+padding: 12px;
+margin-top: 10px;
+margin-bottom: 10px;
+border-radius: 5px;
+border-color: white;
+border: 1px solid whitesmoke;
+}
+.forma{
+background-color:rgba(80,80,80,0.5);
+width:500px;
+margin-left: 32%;
+padding: 20px;
+margin-top: 8%;
+
+
+}
+
+@media only screen and (max-width:600px){
+    .forma{
+      
+        width: 350px;
+        font-size: 15px;
+            margin-left: 40px; 
+            margin-top: 85px;       
+       
+    
+       
+    }
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        align-items: center;
+    }
+}
+input[type=submit]{
+background-color: rgb(46,139,87);
+border-radius: 5px;
+width: 100%;
+padding: 12px;
+color: white;
+cursor: pointer;
+border: none;
+}
+.forma-2{
+margin-top: 10px;
+display: flex;
+justify-content: right;
+
+}
+.forma-2 span,a{
+margin-left: 5px;
+text-decoration: none;
+}
+
+input[type=text]:hover{
+border-color: aqua;
+cursor: pointer;
+
+}
+input[type=text]:active{
+background-color: cornsilk;
+
+}
+input[type=submit]:hover{
+
+border-color: burlywood;
+background-color: chartreuse;
+}
+
+
+select:hover{
+border-color: red;
+cursor:grab;
+}
+a:hover{
+color: red;
+}
+a{
+color: chocolate;
+}

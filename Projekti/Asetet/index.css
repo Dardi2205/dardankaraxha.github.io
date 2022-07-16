@@ -1,0 +1,752 @@
+
+        *{
+            margin: 4;
+            padding: 0;
+        }
+        .header{
+        background-color: burlywood;
+   
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+       
+       
+      
+    }
+  .header img{
+      width: 120px;
+      height: 60px;
+      background-size: cover;
+      margin: 0%;
+      margin-left: 20px;
+    
+  }
+    .header .menu a{
+   
+        font-family: fantasy;
+     
+      text-decoration: none;
+      color: white;
+      padding: 2px 20px;
+  }
+  .header .menu ul{
+    display: flex;
+    list-style: none;
+
+      
+      
+  }
+  
+
+  .menu a:hover{
+      background-color:rgba(238, 233, 236, 0.3);
+      cursor: grab;
+      padding:22px 20px ;
+      transition-delay: 250ms;
+  }
+.dropdown-content{
+    position: absolute;
+    overflow: hidden;
+    max-height: 0;
+}
+
+      .ikona {
+      cursor: pointer;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+
+     
+    
+  
+     
+  }
+ 
+  .ikona a{
+      width: 15px;
+      height: 15px;
+     color: white;
+     font-size: 20px;
+    
+  margin-left: 50px;
+ 
+   
+    text-decoration: none;
+    
+ }
+
+ 
+ .footer{
+     background-color: gray;
+     margin-top: 10px;
+     padding: 20px;
+     text-align: center;
+ }
+ .footer .ikona1{
+     padding: 1rem 0;
+ }
+ .footer .ikona1 a{
+     height: 3rem;
+     width: 3rem;
+     line-height: 3rem;
+     font-size: 2rem;
+     color: #fff;
+    
+     border-radius: 50%;
+     text-decoration: none;
+     margin-left: 5px;
+ }
+
+ .footer .ikona1 .fa-facebook:hover{
+     background-color: #4267B2;
+     color: white;
+     transition-delay: 300ms; 
+ }
+
+ .footer .ikona1 .fa-instagram:hover{
+background-color:#E1306C;
+color: white;
+transition-delay: 300ms; 
+ }
+
+ .footer .ikona1 .fa-twitter:hover{
+background-color: #1DA1F2;
+color: white;
+transition-delay: 300ms; 
+ }
+ .footer .ikona1 .fa-whatsapp:hover{
+background-color: #25D366;
+color: white;
+transition-delay: 300ms; 
+ }
+ .footer .ikona1 .fa-phone:hover{
+    background-color: #25D366;
+    color: white;
+    transition-delay: 300ms;
+
+ }
+ .footer .links{
+
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     padding: 20px 0;
+     gap: 1.5rem;
+ }
+ .footer .links a{
+     border: 1px solid white;
+     padding: .5rem 2.3rem;
+     text-decoration: none;
+     font-size:1.2rem;
+     color: white;
+    
+ }
+ .footer .links a:hover{
+     color: red;
+ }
+
+ .footer .copyright{
+     font-size: 1.1rem;
+     color: white;
+     font-weight: lighter;
+
+ }
+ .footer .copyright span{
+     color: gold;
+     font-size: 0.6cm;
+ }
+ .mapouter{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: gray;
+    padding: 20px;
+    margin-left: 55px;
+   
+}
+
+.gmap_canvas{
+position: relative;
+
+
+}
+.row {     
+    position: relative;
+display: flex;
+flex: 1 1 0px;
+justify-content: center;
+align-items: center;
+top:1%;
+
+}
+.kolona1{
+  background-color:#030f27;
+  width: 600px;
+  height: 500px;
+  padding: 20px;
+
+
+
+}
+.kolona2{
+  background-color:  #fdbe33;
+  width: 600px;
+  height: 500px;
+  padding: 20px;
+  margin-left: -10px;
+}
+.nenkolona1{
+  position: relative;
+  border: 1px solid rgba(256, 256, 256, .2);
+margin-top: 20px;
+margin-bottom: 30px;
+padding: 20px;
+display: flex;
+
+
+}
+.nenkolona-icon .fa-building{
+  font-size: 40px;
+}
+.nenkolona-icon .fa-phone{
+  font-size: 40px;
+}
+.nenkolona-icon .fa-envelope{
+  font-size: 40px;
+}
+.nenkolona-icon{
+  position: relative;
+margin-top: 15px;
+color: #fdbe33;
+display: flex;
+align-items: flex-start;
+flex-direction: row;
+}
+.texti{
+  position: relative;
+  left: 40px;
+  top:-3;
+  line-height: 1.5;
+}
+.texti h3{
+  font-size: 25px;
+  color: goldenrod;
+}
+.texti p{
+
+  color: white;
+  font-size: 20px;
+}
+.kontakti{
+  border-color: rgba(256, 256, 256, .4);
+  border-width: 1px;   
+  margin-top: 15px;
+  
+
+  color: white;
+}
+/*input[type=text]{
+  width:100%;
+  background: transparent;
+  padding: 12px;
+  font-size: 20px;
+
+  
+
+}
+*/ 
+.kon::placeholder{
+  color:#fff;
+  opacity: 1;
+} 
+.kon::-ms-input-placeholder{
+  color:#fff;
+} 
+.kon::-ms-input-placeholder{
+  color:#fff;
+} 
+
+
+/*
+textarea{
+  background: transparent;
+  width: 100%;
+  height: 170px;
+  color: white;
+
+  font-size: 20px;
+}
+
+*/
+.kontakti input:focus,
+.kontakti textarea{
+  box-shadow: none;
+}
+.row a{
+    position: relative;
+  padding: 20px 45px;
+  font-size: 20px;
+  background: #030f27;
+  color: #fdbe33;
+  text-decoration: none;
+  top: 30px;
+}
+a:hover{
+  background-color: #fff;
+  color: black;
+}
+.kontaktiren{
+  text-align: center;
+  line-height: 1;
+  margin-top: 20px;
+
+}
+.kontaktiren p{
+  color: #fdbe33;
+  font-size:20px;
+  font-weight:bold;
+}
+.kontaktiren h3{
+  font-size:35px;
+}
+ .home{
+     background-image: url("/Fotot/karaxha.jpeg");
+    
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 550px;
+     margin-top: 10px;
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .home .teksti{
+    
+    padding: 90px;
+   
+    width: 900px;
+
+
+ }
+ .home .teksti h2{
+ margin-bottom: 15px;
+     font-size: 60px;
+     color: gray;
+
+ }
+ .home .teksti p{
+     font-size: 30px;
+     line-height: 1.3cm;
+     color:chocolate;
+ }
+ button{
+     margin-top: 70px;
+     padding: 13px;
+     color: white;
+     background-color: brown;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+ 
+ button:hover{
+     padding: 12px 20px;
+     background-color: burlywood;
+ }
+ .about{
+     display: flex;
+     flex:1 1 90px;
+   
+ }
+ .foto{
+     margin-top: -20px;
+     width: 650px;
+     height: 420px;
+     background-size: cover;
+ }
+ .foto img{
+     width: 600px;
+    height: 400px;
+ }
+
+ .about-us{
+     margin-top: 15px;
+     font-size: 55px;
+     color: gray;
+     text-align: center;
+ }
+
+
+ span{
+     margin-top: 15px;
+     font-size: 55px;
+     color:darkgoldenrod;
+     text-align: center;
+ }
+ .gmap_canvas
+ {
+     margin-left: 110px;
+ }
+ .about-teksti{
+     padding: 50px;
+     line-height: 0.7cm;
+animation:fadeInAnimation;
+animation-duration: 6s ;
+animation-iteration-count:1;
+
+
+     
+ }
+ @keyframes fadeInAnimation {
+    0%{
+ opacity: 0;
+    }
+    100%{
+    opacity: 1;
+    }
+  
+}
+
+ .about-teksti h2{
+    margin-bottom: 35px;
+    font-size: 50px;
+    color:burlywood;
+
+ }
+ .about-teksti p{
+     font-size: 25px;
+     color: grey;
+     line-height:  1cm ;
+    
+
+ }
+ .butoni{
+    margin-top: 24px;
+     padding: 12px;
+     color: white;
+     background-color: brown;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+
+.punet{
+    display: grid;
+    grid-template-columns: 47% 47%;
+    gap:10px;
+    margin-top: 40px;
+    margin-left: 110px;
+    
+    
+}
+ .puna1{
+    width: 500px;
+    height: 410px;
+    margin-left: 0px;
+    margin-right: 5px;
+    border: 1px solid grey;
+ 
+   
+}
+ .puna1 img{
+    width: 440px;
+    height: 310px;
+   padding:20px 30px;
+
+}
+.puna1 img:hover{
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+}
+.puna1 .teksti-punes{
+    text-align: center;
+  
+
+}
+.puna1 .teksti-punes h3{
+    color: grey;
+    text-shadow: 2px 2px aquamarine;
+    font-size: 30px;
+
+
+    
+}
+@media  only screen and (max-width:1024px){
+    .home{
+        width: 80%;
+    }
+    .footer{
+        width: 75%;
+    }
+    
+    .home .teksti h2{
+        font-size: 30px;
+    }
+    .home .teksti button{
+        margin-top: 20px;
+    }
+    .header{
+        font-size: 12px;
+        width: 80%;
+    }
+    .header img{
+        width: 100px;
+        height: 50px;
+    }
+    .header .ikona{
+        font-size: 10px;
+        margin-right: 40px;
+    }
+ 
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .about .foto img{
+        width: 100%;
+        margin-left: 60px;
+        
+    }
+    .about .about-teksti h2{
+        line-height: 1.5cm;
+
+    }
+    .punet{
+        width: 90%;
+     margin-left: 25px;
+       
+    }
+    .puna1{
+        width:320px;
+        height: 320px;
+    }
+    .puna1 img{
+        width: 270px;
+        height: 240px;
+    }
+   .puna1 .teksti-punes h3{
+       font-size: 20px;
+   }
+
+   .about-us{
+       text-align: center;
+   }
+    
+        
+}
+@media  only screen and (max-width:991px){
+    .header{
+        width: 100%;
+    }
+    .home{
+        width: 100%;
+    }
+    
+    .home .teksti h2{
+        font-size: 30px;
+    }
+    .home .teksti button{
+        margin-top: 20px;
+    }
+    .header{
+        font-size: 12px;
+    }
+    .header img{
+        width: 100px;
+        height: 50px;
+    }
+    .header .ikona{
+        font-size: 10px;
+        margin-right: 40px;
+    }
+ 
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about .foto img{
+        width: 100%;
+        
+    }
+    .about .about-teksti h2{
+        line-height: 1.5cm;
+
+    }
+    .punet{
+        width: 100%;
+     margin-left: 45px;
+       
+    }
+    .puna1{
+        width:320px;
+        height: 320px;
+    }
+    .puna1 img{
+        width: 270px;
+        height: 240px;
+    }
+   .footer{
+       width: 93%;
+   }
+
+    
+    
+        
+}
+
+ @media  only screen and (max-width:768px){
+     .header{
+         width: 98%;
+        
+     }
+     .header img{
+         width: 90px;
+         height: 45px;
+     }
+   .dropdown{
+        
+        display:block;
+ 
+       
+      
+    }
+   #klasa{
+     
+  
+    color:white;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+   }
+  .dropdown-content{
+     
+    overflow:visible;
+    
+       margin-top: -60px;
+    
+    
+     display: none;
+     
+     
+       
+   }
+   .dropdown-content a{
+    background-color: white;
+    width: 50px;
+    margin-top: -20px;
+       color: gray;
+       padding: 15px;
+       text-decoration: none;
+       display: table-row;
+       font-size: 20px;
+   }
+   .dropdown-content a:hover{
+       background-color: cornflowerblue;
+       font-size: 20px;
+   }
+   .dropdown:hover .dropdown-content{
+       display: block;
+   }
+   
+    .home{
+        width: 98%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .ikona a{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+
+    }
+    .ikona{
+        margin-right: 10px;
+        
+    }
+  
+.menu {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+}
+.menu a:hover{
+   padding: 0px 15px;
+}
+    
+.home .teksti p{
+   font-size: 20px;
+   line-height: 0.9cm;
+   width: 100%;
+}
+.home .teksti h2{
+   font-size: 35px;
+   line-height: 1.2cm;
+}
+.home .teksti button{
+   margin-top: 20px;
+   padding: 8px 12px;
+}
+.about{
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+
+}
+
+        
+.about .foto img{
+   width: 110%;
+   margin-left: 70px;
+
+}
+.about-teksti{
+width: 100%;
+margin-left: 60px;
+}
+.about-teksti h2{
+font-size: 30px;
+line-height: 1cm;
+}
+.about-teksti p{
+   font-size: 15px;
+}
+.about .butoni{
+   padding: 6px 12px;
+}
+.punet{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 50px;
+}
+.puna1{
+    width:380px;
+    height: 290px;
+  
+  
+}
+.puna1 img{
+    width: 290px;
+    height:190px;
+}
+.puna1 .teksti-punes h3{
+    font-size: 20px;
+}
+
+
+ }
+
+
+ @media only screen and (max-width:600px){
+
+    .about .foto  img{
+        margin-left: 10px;
+    }
+    .footer{
+        width: 90%;
+    }
+ }
+

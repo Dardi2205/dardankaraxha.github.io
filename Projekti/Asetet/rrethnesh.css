@@ -1,0 +1,401 @@
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px 	rgb(169,169,169); 
+       border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px 	rgb(169,169,169) ; 
+}
+.header{
+    background-color: burlywood;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+   
+   
+  
+}
+.header img{
+  width: 120px;
+  height: 60px;
+  background-size: cover;
+  margin: 0%;
+  margin-left: 20px;
+
+}
+.header .menu a{
+
+    font-family: fantasy;
+ 
+  text-decoration: none;
+  color: white;
+  padding: 2px 20px;
+}
+.header .menu ul{
+display: flex;
+list-style: none;
+
+  
+  
+}
+
+
+.menu a:hover{
+  background-color:rgba(238, 233, 236, 0.3);
+  cursor: grab;
+  padding:22px 20px ;
+  transition-delay: 250ms;
+}
+
+  .ikona {
+  cursor: pointer;
+margin-right: 60px;
+display: flex;
+align-items: center;
+
+ 
+
+
+ 
+}
+
+.ikona a{
+  width: 15px;
+  height: 15px;
+ color: white;
+ font-size: 20px;
+
+margin-left: 50px;
+
+
+text-decoration: none;
+
+}
+
+.shtresa-videos{
+    background-color: grey;
+    margin-top: 10px;
+    
+}
+.videoja{
+ 
+   padding: 10px;
+
+}
+.videoja video{
+    
+    margin-left: 220px;
+   width:1000px;
+   height: 600px;
+   opacity: 0.6;
+  margin-bottom: 10px;
+  animation:fadeInAnimation;
+animation-duration: 20s 
+;
+animation-iteration-count:1;
+    
+}
+@keyframes fadeInAnimation {
+    0%{
+ opacity: 0;
+    }
+    100%{
+    opacity: 1;
+    }
+  
+}
+.biografit-shtresa{
+display: flex;
+ overflow: auto;
+ scroll-snap-type: x mandatory;
+
+margin-top: 20px;
+
+
+    
+}
+.biografit-shtresa >.biografia{
+    background-color:rgba(238, 233, 236, 0.8);
+text-align: center;
+min-width:75%;
+    scroll-snap-align:start;
+
+   
+    height: 450px;
+    margin-left: 30px;
+
+}
+
+
+.biografia h2{
+    font-size:40px;
+    color: gray;
+}
+.biografia h3{
+    font-size: 30px;
+    color: red;
+}
+.biografia p{
+    font-size: 25px;
+    color: burlywood;
+  
+}
+.footer{
+    background-color: gray;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.footer .ikona1{
+    padding: 1rem 0;
+}
+.footer .ikona1 a{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: #fff;
+   
+    border-radius: 50%;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.biografia button{
+    background-color: #1197cc;
+    box-shadow: #094c66 4px 4px 0px;
+    border-radius: 8px;
+    transition: transfrom 200ms,box-shadow 200ms;
+    padding: 12px 20px;
+    cursor: pointer;
+    
+    
+}
+.biografia button:active{
+    transform: translate(4px) translate(4px);
+    box-shadow: #094c66 0px 0px 0px;
+}
+.biografia a{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+.footer .ikona1 .fa-facebook:hover{
+    background-color: #4267B2;
+    color: white;
+    transition-delay: 300ms; 
+}
+
+.footer .ikona1 .fa-instagram:hover{
+background-color:#E1306C;
+color: white;
+transition-delay: 300ms; 
+}
+
+.footer .ikona1 .fa-twitter:hover{
+background-color: #1DA1F2;
+color: white;
+transition-delay: 300ms; 
+}
+.footer .ikona1 .fa-whatsapp:hover{
+background-color: #25D366;
+color: white;
+transition-delay: 300ms; 
+}
+.footer .ikona1 .fa-phone:hover{
+   background-color: #25D366;
+   color: white;
+   transition-delay: 300ms;
+
+}
+.footer .links{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    gap: 1.5rem;
+}
+.footer .links a{
+    border: 1px solid white;
+    padding: .5rem 2.3rem;
+    text-decoration: none;
+    font-size:1.2rem;
+    color: white;
+   
+}
+.footer .links a:hover{
+    color: red;
+}
+
+.footer .copyright{
+    font-size: 1.1rem;
+    color: white;
+    font-weight: lighter;
+
+}
+.footer .copyright span{
+    color: gold;
+    font-size: 0.6cm;
+}
+@media only screen and (max-width:1024px){
+    .shtresa-videos{
+        width: 100%;
+        height: 500px;
+    }
+      .videoja video{
+      width: 900px;
+      height: 400px;
+      margin-left: 40px;
+      margin-top: 45px;
+      
+    }
+}
+@media only screen and (max-width:991px){
+    
+   
+    .header{
+        font-size: 15px;
+    }
+    .header img{
+        width: 100px;
+        height: 50px;
+    }
+    .header .ikona{
+        font-size: 10px;
+        margin-right: 40px;
+    }
+    .shtresa-videos{
+        width: 100%;
+        height: 420px;
+    }
+      .videoja video{
+      width: 650px;
+      height: 400px;
+      margin-left: 45px;
+      margin-top: -5px;
+      
+    }
+}
+@media only screen and (max-width:768px){
+    .header img{
+        width: 90px;
+        height: 45px;
+    }
+  
+   .home{
+       font-size: 15px;
+       text-align: center;
+   }
+   .ikona a{
+       margin-top: 10px;
+       margin-bottom: 10px;
+       font-size: 18px;
+
+   }
+   .ikona{
+       margin-right: 10px;
+       
+   }
+ 
+.menu {
+ width: 100%;
+ max-height: 0;
+ overflow: hidden;
+}
+.menu a:hover{
+  padding: 0px 15px;
+}
+
+.biografia{
+    height: 600px;
+    
+}
+
+.biografia h2,h3{
+    font-size: 30px;
+
+}
+.biografia p{
+    font-size: 20px;
+    padding: 20px;
+   
+}
+.shtresa-videos{
+    width: 100%;
+    height: 400px;
+}
+  .videoja video{
+  width: 500px;
+  height: 400px;
+  margin-left: 33px;
+  margin-top: -35px;
+  
+}
+}
+@media only screen and (max-width:600px){
+    .header img{
+        width: 80px;
+        height: 45px;
+    }
+  
+   .home{
+       font-size: 13px;
+       text-align: center;
+   }
+   .ikona a{
+       margin-top: 10px;
+       margin-bottom: 10px;
+       font-size: 14px;
+
+   }
+   .ikona{
+       margin-right: 10px;
+       
+   }
+ 
+.menu {
+ width: 100%;
+ max-height: 0;
+ overflow: hidden;
+}
+.menu a:hover{
+  padding: 0px 15px;
+}
+
+.biografia{
+    height: 550px;
+    
+}
+
+.biografia h2,h3{
+    font-size: 25px;
+
+}
+.biografia p{
+    font-size: 20px;
+    padding: 20px;
+   
+}
+.shtresa-videos{
+    width: 100%;
+    height: 400px;
+}
+  .videoja video{
+  width: 400px;
+  height: 400px;
+  margin-left: 23px;
+  margin-top: -50px;
+  
+}
+}
