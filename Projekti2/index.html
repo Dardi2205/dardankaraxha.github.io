@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <link rel="icon" href="https://www.youtube.com/s/desktop/4a88d8c6/img/favicon_96x96.png" type="image/x-icon" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+<body>
+    
+</body>
+</html>
+<title>YouTube</title>
+<head>
+    <style>
+        body{
+            background-color: black;
+            scroll-snap-type: y proximity;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+.rreshti{
+   
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:rgba(51, 60, 63, 0.51);
+    height: 55px;
+ 
+  
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    gap:20px;
+    color: white;
+    
+}
+.logo i{
+    font-size: 20px;
+    cursor: pointer;
+    font-weight:lighter;
+}
+.logo h3{
+    font-weight:10;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ margin-left: -28px;
+}
+.search{
+    color: white;
+    display: flex;
+    align-items:center;
+    width:650px;
+    margin-right: -90px;
+    gap: 20px;
+    
+}
+.search i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.search  .fa-search{
+    background-color:rgba(51, 60, 63, 0.51);
+   
+    padding:10px 25px ;
+    margin-left: -20px;
+    font-weight: 100;
+}
+.search .fa-microphone{
+    border-radius:50%;
+    background-color: black;
+    padding:12px 15px;
+    margin-left: -10px;
+ 
+}
+input[type="search"]{
+    padding: 10px;
+    width:90%;
+  border-bottom: none;
+  border-right: none;
+  border-left: 0.1rem solid gray normal;
+
+    color: white;
+    background-color:black;
+    font-family: sans-serif;
+    font-size: 16px;
+
+}
+::placeholder{
+    font-size: 15px;
+    color:gray;
+    font-weight: 10;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.butoni{
+    width:220px;
+    
+}
+.butoni i{
+    margin-right: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+ 
+}
+.body{
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 20% 78%;
+}
+.side-left{
+ 
+   display: flex;
+  flex-direction: column;
+    width: 270px;
+    color: white;
+    margin-top: -57px;
+    padding-top: 52px;
+    margin-bottom: 30px;
+    height:83vh;
+   
+   
+  gap: 3px;
+  margin-left: 0px;
+background-color:rgba(51, 60, 63, 0.51); ;
+}
+.side-left i{
+    font-size:25px;
+    padding-left: 33px;
+}
+.side-left ul{
+    
+    list-style-type: none;
+    padding: 10px ;
+ 
+}
+.side-left a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+   
+}
+.side-hover:hover{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color:gray;
+    width:43.7vh;
+    height:45px;
+    gap: -5px;
+    
+    
+    
+}
+
+.material-icons {
+    position: relative;
+    color: white;
+   font-size: 36px;
+   top:5px;
+  
+}
+.vija{
+    border-top:1px solid gray;
+    width:90%;
+}
+.side-right{
+    padding:20px 20px;
+    width:850px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+  gap:15px;
+}
+
+.videot{
+    width:240px;
+    height:140px;
+    cursor: pointer;
+    
+}
+.videot img{
+    width:100%;
+    height:100%;
+  
+}
+h5{
+    color:white;
+    padding-top: 10px;
+    line-height: 1.2;
+}
+p{
+    color:gray;
+    padding: 5px 45px;
+    line-height:0.8;
+}
+.foto-rrum{
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.foto-rrum img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+.teksti{
+    width: 100%;
+    display: flex;
+    gap:10px;
+}
+.vija1{
+    border-top:1px solid gray;
+    width:80%;
+    margin-left: 20%;
+}
+.shtresa{
+    width:77.7%;
+    height:25px;
+    margin-left: 20%;
+    background-color: rgba(51, 60, 63, 0.51);
+    padding: 15px;
+   
+}
+.shtresa a{
+   line-height: 1.6;
+    padding: 10px 18px;
+    text-decoration: none;
+    color:#fff;
+    background-color: rgba(51, 60, 63, 0.51);
+    border-radius: 20px;
+    margin-top:30px;
+    margin-right: 10px;
+
+}
+.shtresa a.active{
+    background-color:#fff;
+    color:black;
+}
+li img{
+ 
+   
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 5px;
+   
+
+}
+.krye a{
+position: relative;
+line-height: 0.1;
+display: flex;
+align-items: center;
+
+}
+.krye a:hover{
+    margin-top: -10px;
+}
+@media screen and (max-width:600px) {
+    .search{
+        display: none;
+    }
+    .shtresa{
+        display: none;
+    }
+    .side-right{
+        grid-template-columns: 1fr;
+    }
+    .videot{
+        width:70%;
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+    .videot img{
+        width:70%;
+    }
+    .side-left{
+        display: none;
+    }
+    .rreshti{
+        width:100%;
+    }
+    .teksti{
+        height:auto;
+    }
+    .foto-rrum{
+        width:50px;
+        height:50px;
+    }
+    .foto-rrum img{
+        width: 100%;
+    }
+}
+    </style>
+
+
+
+</head>
+
+
+<body>
+    
+
+    <div class="rreshti">
+
+
+<div class="logo">
+    
+    <i class="fa fa-bars"></i>
+    <i class="fa fa-youtube-play" style="font-size:25px;color:red;margin-right: 10px;"></i>
+
+
+    <h3>YouTube</h3>
+</div>
+<div class="search">
+<input type="search"placeholder="Search">
+<i class="fa fa-search"></i>
+<i class="fa fa-microphone"></i>
+</div>
+<div class="butoni">
+  
+        
+    <i class="fa fa-video-camera"></i>
+    <i class="material-icons" style="font-size:25px;">apps</i>
+   <i class="fa fa-bell"></i>
+   <i class="fa fa-user-circle"></i>
+</div>
+
+
+
+    </div>
+    <div class="vija1"></div>
+<div class="shtresa">
+
+    <a href="#"class="active">All</a>
+    <a href="#">Mixes</a>
+    <a href="#">Gaming</a>
+    <a href="#">Music</a>
+    <a href="#">Car</a>
+    <a href="#">Show</a>
+    <a href="#">TV Series</a>
+    <a href="#">Web Development</a>
+    <a href="#">TV Shows</a>
+    <a href="#">Science</a>
+
+</div>
+<div class="vija1"></div>
+    <div class="body">
+
+<div class="side-left">
+    <div class="side-hover">
+    <ul>
+    <li><i class="fa fa-home"></i>
+    <a href="#">Home</a></li></ul></div>
+    <div class="side-hover">
+        <ul>
+        <li><i class="fa fa-compass"></i>
+        <a href="#">Explore</a></li></ul></div>
+        <div class="side-hover">
+            <ul>
+            <li><i class="material-icons"style="font-size:23px;">subscriptions</i>
+            <a href="#"style="margin-left:13px;">Subscription</a></li></ul></div>
+            <div class="vija"></div>
+            <div class="side-hover">
+                <ul>
+                <li><i class="fa fa-book"style="font-size:23px;"></i>
+                <a href="#"style="margin-left:13px;">Library</a></li></ul></div>
+                <div class="side-hover">
+                    <ul>
+                    <li><i class="fa fa-history"style="font-size:23px;"></i>
+                    <a href="#"style="margin-left:13px;">History</a></li></ul></div>
+                    <div class="side-hover">
+                        <ul>
+                        <li><i class="fa fa-play"style="font-size:23px;"></i>
+                        <a href="#"style="margin-left:13px;">Video</Video></a></li></ul></div>
+                        <div class="side-hover">
+                            <ul>
+                            <li><i class="fa fa-clock-o"style="font-size:23px;"></i>
+                            <a href="#"style="margin-left:13px;">Watch Later</Video></a></li></ul></div>
+                            <div class="vija"></div>
+
+                             <h3 style="color:gray;padding:15px 20px;">Subscription</h3>
+                             <div class="side-hover">
+                                <ul>
+                                <li id="krye"><img src="vb.jpg">
+                                <a href="#"style="margin-left:13px;">VB Kids</a></li></ul></div>
+
+</div>
+
+<div class="side-right">
+
+
+    <div class="videot">
+        <img src="download (2).jpg">
+    <div class="teksti">
+        <div class="foto-rrum"><img src="skerdi.jpg"></div>
+        <h5>SKERDI & TUNA-A JE</h5>
+ 
+</div>
+<p>SkerdiOfficial</p>
+<p>500k views . 4 days ago</p>
+        </div>
+
+        <div class="videot">
+            <img src="ledri-melinda.jpeg">
+        <div class="teksti">
+            <div class="foto-rrum"><img src="melinda.jpeg"></div>
+            <h5>MELINDA & LEDRI -A M KE DASHT</h5>
+     
+    </div>
+    <p>MelindaOfficial</p>
+    <p>2m views . 1 months ago</p>
+            </div>
+            <div class="videot">
+                <img src="portfolio.jpg">
+            <div class="teksti">
+                <div class="foto-rrum"><img src="mosh.jpg"></div>
+                <h5>PORTFOLIO WEBSITE WITH MOSH</h5>
+         
+        </div>
+        <p>MoshOfficial</p>
+        <p>20m views . 9 months ago</p>
+                </div>
+                <div class="videot">
+                    <img src="american got talent.jpg">
+                <div class="teksti">
+                    <div class="foto-rrum"><img src="gottalent.jpg"></div>
+                    <h5>TOP 4 WIZARD IN THE AMT</h5>
+             
+            </div>
+            <p>AmericangotOfficial</p>
+            <p>200m views . 9 months ago</p>
+                    </div>
+
+                    <div class="videot">
+                        <img src="rita-fidani.jpg">
+                    <div class="teksti">
+                        <div class="foto-rrum"><img src="unnamed.jpg"></div>
+                        <h5>RITA X FIDANI-ME TUPANA</h5>
+                 
+                </div>
+                <p>PrrallTupan</p>
+                <p>2m views . 9 months ago</p>
+                        </div>
+                        <div class="videot">
+                            <img src="blerando-xh.jpg">
+                        <div class="teksti">
+                            <div class="foto-rrum"><img src="blerando.jpg"></div>
+                            <h5>BLERANDO-XHENSILA</h5>
+                     
+                    </div>
+                    <p>BlerandoOfficial</p>
+                    <p>1m views . 5 days ago</p>
+                            </div>
+                            <div class="videot">
+                                <img src="dwayne.jpg">
+                            <div class="teksti">
+                                <div class="foto-rrum"><img src="channels4_profile1.jpg"></div>
+                                <h5>Dwayne Jonson failed to arrest Vin Disel</h5>
+                         
+                        </div>
+                        <p>FightingArea</p>
+                        <p>10m views . 5 months ago</p>
+                                </div>
+                                <div class="videot">
+                                    <img src="numrat.jpg">
+                                <div class="teksti">
+                                    <div class="foto-rrum"><img src="djkodex.jpg"></div>
+                                    <h5>Numrat Anglisht-Ngjyrat</h5>
+                             
+                            </div>
+                            <p>Dj Kodex</p>
+                            <p>10m views . 5 months ago</p>
+                                    </div>
+</div>
+
+    </div>
+
+</body>
+
+</html>
