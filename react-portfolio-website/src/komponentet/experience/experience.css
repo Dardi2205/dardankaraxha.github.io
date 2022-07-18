@@ -1,0 +1,83 @@
+
+#experience{
+    position: relative;
+    margin-top:15rem;
+}
+.experience_grid{
+    display: flex;
+    flex: 1 1 10px;
+   justify-content:center;
+   margin-left:-10px;
+}
+.borderi{
+    width:550px;
+    border:1px solid gray;
+    height:450px;
+    border-radius:3rem;
+    margin-left: 30px;
+    background:var(--color-bg-variant);
+
+}
+.borderi:hover{
+    background:rgba(50,70,71,0.4);
+}
+.listakryesore{
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+.teksti{
+   
+    padding-top: 30px;
+}
+.lista{
+    padding: 10px 90px;
+    margin-top: 40px;
+    display: flex;
+    flex: 1 1 10px;
+  
+    
+    
+}
+
+.tekstimprapa h5{
+    padding: 0px 10px;
+}
+.lista i{
+    font-size: 20px;
+}
+section > h5{
+    text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+    #experience{
+margin-top:-200px;
+    }
+    .experience_grid{
+        margin-left: 120px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .experience_grid >div{
+        width: 80%;
+        padding: 1rem;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #experience{
+        margin-top:-380px;
+            }
+    .experience_grid{
+        margin-left:0px;
+        gap:1rem;
+    }
+    .experience_grid >div{
+        width:100%;
+        padding:2rem 1rem;
+    }
+    .lista{
+        margin-left: -45px;
+    }
+}

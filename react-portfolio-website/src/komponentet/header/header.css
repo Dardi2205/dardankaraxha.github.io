@@ -1,0 +1,81 @@
+
+
+header{
+    height:200vh ;
+    padding-top:7rem;
+    overflow:hidden;
+}
+.koka__zgjerimi{
+    text-align: center;
+    height:65%;
+    position:relative;
+}
+
+
+.cta{
+    margin-top:1.5rem;
+    display: flex;
+    justify-content: center;
+    gap:1.2rem;
+}
+
+.header_linket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.8rem;
+    position: absolute;
+    left:18%;
+    bottom:3rem;
+    font-size: 25px;
+}
+.header_linket::after{
+    content:"";
+    width:1px;
+    height:2rem;
+    background:var(--color-primary);
+}
+.une{
+    background:linear-gradient(var(--color-primary),transparent);
+    width:20rem;
+    height: 24.3rem;
+    position: absolute;
+    left:calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 18rem 18rem 0 0;
+    overflow: hidden;
+    padding:  5rem 1.5rem 1.5rem 1.5rem;
+}
+.une img{
+    margin-top: -70px;
+    margin-left:10px;
+    
+}
+.scroll_down{
+    position: absolute;
+right: 5.3rem;
+bottom: 6.3rem;
+transform:rotate(90deg);
+font-weight: 300;
+font-size: 0.9rem;
+}
+
+@media screen and (max-width:1024px) {
+    header{
+        height: 100vh;
+    }
+   
+    
+}
+@media screen and (max-width:600px) {
+    header{
+        height:200vh;
+    }
+    .header_linket,.scroll_down{
+        display: none;
+    }
+    .une{
+        margin-left: 16px;
+    }
+    
+}
